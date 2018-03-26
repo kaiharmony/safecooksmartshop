@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{7A90F7D1-069C-4CED-9261-1DE39654F5A7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SafeCookSmartShop</RootNamespace>
+    <AssemblyName>SafeCookSmartShop</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>enabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>SafeCookSmartShop.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>SafeCookSmartShop.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\bootstrap-theme.min.css" />
+    <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\font-awesome.min.css" />
+    <Content Include="assets\css\fonticons.css" />
+    <Content Include="assets\css\navmenu\styles.css" />
+    <Content Include="assets\css\plugins.css" />
+    <Content Include="assets\css\portfolio.jquery.css" />
+    <Content Include="assets\css\responsive.css" />
+    <Content Include="assets\css\skills\inview.min.js" />
+    <Content Include="assets\css\skills\main.js" />
+    <Content Include="assets\css\skills\progressbar.css" />
+    <Content Include="assets\css\skills\progressbar.js" />
+    <Content Include="assets\css\skills\style.css" />
+    <Content Include="assets\css\slicknav.min.css" />
+    <Content Include="assets\css\style.css" />
+    <Content Include="assets\css\teamslide.css" />
+    <Content Include="assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\fonts\Linearicons-Free.svg" />
+    <Content Include="assets\images\ab.jpg" />
+    <Content Include="assets\images\choose.png" />
+    <Content Include="assets\images\cleftbg.png" />
+    <Content Include="assets\images\delete.png" />
+    <Content Include="assets\images\feature.png" />
+    <Content Include="assets\images\fg1.jpg" />
+    <Content Include="assets\images\fg2.jpg" />
+    <Content Include="assets\images\fg3.jpg" />
+    <Content Include="assets\images\fg4.jpg" />
+    <Content Include="assets\images\fg5.jpg" />
+    <Content Include="assets\images\fg6.jpg" />
+    <Content Include="assets\images\fg7.jpg" />
+    <Content Include="assets\images\fg8.jpg" />
+    <Content Include="assets\images\footerlogo.png" />
+    <Content Include="assets\images\gl1.jpg" />
+    <Content Include="assets\images\gl2.jpg" />
+    <Content Include="assets\images\gl3.jpg" />
+    <Content Include="assets\images\homebg.jpg" />
+    <Content Include="assets\images\jhonnycakes.jpg" />
+    <Content Include="assets\images\logo.png" />
+    <Content Include="assets\images\na1.jpg" />
+    <Content Include="assets\images\newsfourbg.jpg" />
+    <Content Include="assets\images\pepper.jpg" />
+    <Content Include="assets\images\pf1.jpg" />
+    <Content Include="assets\images\pf2.jpg" />
+    <Content Include="assets\images\pf3.jpg" />
+    <Content Include="assets\images\pf4.jpg" />
+    <Content Include="assets\images\pf5.jpg" />
+    <Content Include="assets\images\playicon.png" />
+    <Content Include="assets\images\selectmenu.png" />
+    <Content Include="assets\images\separator.png" />
+    <Content Include="assets\images\service.png" />
+    <Content Include="assets\images\service2.png" />
+    <Content Include="assets\images\service3.png" />
+    <Content Include="assets\images\s_ab1.png" />
+    <Content Include="assets\images\s_ab2.png" />
+    <Content Include="assets\images\s_ab3.png" />
+    <Content Include="assets\images\s_icon.png" />
+    <Content Include="assets\images\team1.jpg" />
+    <Content Include="assets\images\team2.jpg" />
+    <Content Include="assets\images\team3.jpg" />
+    <Content Include="assets\images\team4.jpg" />
+    <Content Include="assets\images\teambg.jpg" />
+    <Content Include="assets\images\teambg.png" />
+    <Content Include="assets\images\Under Construction.PNG" />
+    <Content Include="assets\images\video.jpg" />
+    <Content Include="assets\images\waffle.jpg" />
+    <Content Include="assets\images\whiseparator.png" />
+    <Content Include="assets\images\zigzag.png" />
+    <Content Include="assets\js\gmaps.min.js" />
+    <Content Include="assets\js\jquery.easing.1.3.js" />
+    <Content Include="assets\js\jquery.easypiechart.min.js" />
+    <Content Include="assets\js\jquery.mixitup.min.js" />
+    <Content Include="assets\js\jquery.slicknav.min.js" />
+    <Content Include="assets\js\main.js" />
+    <Content Include="assets\js\plugins.js" />
+    <Content Include="assets\js\portfolio.jquery.js" />
+    <Content Include="assets\js\vendor\bootstrap.js" />
+    <Content Include="assets\js\vendor\bootstrap.min.js" />
+    <Content Include="assets\js\vendor\jquery-1.11.2.min.js" />
+    <Content Include="assets\js\vendor\modernizr-2.8.3-respond-1.4.2.min.js" />
+    <Content Include="assets\js\vendor\npm.js" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\signin.css" />
+    <Content Include="Content\ViewRecipe.css" />
+    <Content Include="CreateList.aspx" />
+    <Content Include="CreateRecipe.aspx" />
+    <Content Include="data\list.xml" />
+    <Content Include="Default.aspx" />
+    <Content Include="ErrorMessage.aspx" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Login.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="assets\fonts\FontAwesome.otf" />
+    <Content Include="assets\fonts\Linearicons-Free.eot" />
+    <Content Include="assets\fonts\Linearicons-Free.ttf" />
+    <Content Include="assets\fonts\Linearicons-Free.woff" />
+    <Content Include="assets\fonts\Linearicons-Free.woff2" />
+    <None Include="My Project\PublishProfiles\44c3b05a-0ee0-4-231-b9ee - Web Deploy.pubxml" />
+    <None Include="My Project\PublishProfiles\687d6eb1-0ee0-4-231-b9ee - FTP.pubxml" />
+    <None Include="My Project\PublishProfiles\687d6eb1-0ee0-4-231-b9ee - Web Deploy.pubxml" />
+    <None Include="My Project\PublishProfiles\6efbb140-0ee0-4-231-b9ee - FTP.pubxml" />
+    <None Include="My Project\PublishProfiles\6efbb140-0ee0-4-231-b9ee - Web Deploy.pubxml" />
+    <None Include="My Project\PublishProfiles\9984cae7-0ee0-4-231-b9ee - FTP.pubxml" />
+    <None Include="My Project\PublishProfiles\9984cae7-0ee0-4-231-b9ee - Web Deploy.pubxml" />
+    <None Include="My Project\PublishProfiles\be7a45fc-0ee0-4-231-b9ee - FTP.pubxml" />
+    <None Include="My Project\PublishProfiles\be7a45fc-0ee0-4-231-b9ee - Web Deploy.pubxml" />
+    <None Include="My Project\PublishProfiles\safecooksmartshopgprototype - FTP.pubxml" />
+    <None Include="My Project\PublishProfiles\safecooksmartshopgprototype - Web Deploy.pubxml" />
+    <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="SearchList.aspx" />
+    <Content Include="SearchRecipe.aspx" />
+    <Content Include="UpdateList.aspx" />
+    <Content Include="UpdateRecipe.aspx" />
+    <Content Include="ViewList.aspx" />
+    <Content Include="ViewRecipe.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CreateList.aspx.designer.vb">
+      <DependentUpon>CreateList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateList.aspx.vb">
+      <DependentUpon>CreateList.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CreateRecipe.aspx.designer.vb">
+      <DependentUpon>CreateRecipe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateRecipe.aspx.vb">
+      <DependentUpon>CreateRecipe.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ErrorMessage.aspx.designer.vb">
+      <DependentUpon>ErrorMessage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorMessage.aspx.vb">
+      <DependentUpon>ErrorMessage.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SearchList.aspx.designer.vb">
+      <DependentUpon>SearchList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchList.aspx.vb">
+      <DependentUpon>SearchList.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="SearchRecipe.aspx.designer.vb">
+      <DependentUpon>SearchRecipe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchRecipe.aspx.vb">
+      <DependentUpon>SearchRecipe.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.vb">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site1.Master.vb">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateList.aspx.designer.vb">
+      <DependentUpon>UpdateList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateList.aspx.vb">
+      <DependentUpon>UpdateList.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="UpdateRecipe.aspx.designer.vb">
+      <DependentUpon>UpdateRecipe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateRecipe.aspx.vb">
+      <DependentUpon>UpdateRecipe.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ViewList.aspx.designer.vb">
+      <DependentUpon>ViewList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewList.aspx.vb">
+      <DependentUpon>ViewList.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ViewRecipe.aspx.designer.vb">
+      <DependentUpon>ViewRecipe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewRecipe.aspx.vb">
+      <DependentUpon>ViewRecipe.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Site1.Master" />
+    <Content Include="Scripts\jquery-1.9.1.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>37899</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:37839/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
